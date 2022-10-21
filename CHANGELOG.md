@@ -1,20 +1,20 @@
-## 1.0.0
+## 1.0.2
 
-* initial release.
-  - Only the Windows platform was implemented.
+- initial release.
 
-* IWindowsInfoProvider
+  - Only Windows platforms have been implemented yet.
+
+- IWindowsInfoProvider
   - makeWindowControlList
   - isCurrentWindow
   - getTitle
   - getIconMemory
   - getModuleName
   - getPath
-  
-* IWindowControl 
+- IWindowControl
   - getId
   - isAlwaysOn
-  - setAlwaysOn  
+  - setAlwaysOn
   - getOpacity
   - setOpacity
   - isDisabled

@@ -1,6 +1,10 @@
 name: desktop_window_manager
-description: Get Windows information on your desktop and control it.
-version: 1.0.1
+description: |
+  Get Windows information on your desktop and control it.
+  getTitle, getIconMemory, getModuleName, getPath,
+  setAlwaysOn, setOpacity, setDisabled, setMinimized,
+
+version: 1.0.2
 homepage: https://github.com/stacew/desktop_window_manager.git
 
 environment:
