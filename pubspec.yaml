@@ -1,5 +1,5 @@
 name: desktop_window_manager
-description: Get Windows information on your desktop and control it.  
+description: Get Windows information on your desktop and control it.
 version: 1.0.0
 homepage: https://github.com/stacew/desktop_window_manager.git
 
@@ -10,6 +10,7 @@ environment:
 dependencies:
   win32: ^3.0.1
   bitmap: ^0.1.2
+  ffi: ^2.0.1
   flutter:
     sdk: flutter
   plugin_platform_interface: ^2.0.2
