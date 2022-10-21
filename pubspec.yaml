@@ -1,6 +1,6 @@
 name: desktop_window_manager
 description: Get Windows information on your desktop and control it.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/stacew/desktop_window_manager.git
 
 environment:
