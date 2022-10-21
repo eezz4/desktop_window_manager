@@ -10,7 +10,7 @@ environment:
 dependencies:
   win32: ^3.0.1
   bitmap: ^0.1.2
-  ffi: ^2.0.1
+  ffi: ^1.0.0
   flutter:
     sdk: flutter
   plugin_platform_interface: ^2.0.2
