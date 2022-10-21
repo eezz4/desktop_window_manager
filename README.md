@@ -1,15 +1,25 @@
 # desktop_window_manager
 
-A new Flutter plugin project.
+## 1.0.0
 
-## Getting Started
+* initial release.
+  - Only the Windows platform was implemented.
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
-
-For help getting started with Flutter development, view the
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
+* IWindowsInfoProvider
+  - makeWindowControlList
+  - isCurrentWindow
+  - getTitle
+  - getIconMemory
+  - getModuleName
+  - getPath
+  
+* IWindowControl 
+  - getId
+  - isAlwaysOn
+  - setAlwaysOn  
+  - getOpacity
+  - setOpacity
+  - isDisabled
+  - setDisabled
+  - isMinimized
+  - setMinimize
