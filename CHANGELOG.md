@@ -1,3 +1,23 @@
-## 0.0.1
+## 1.0.0
 
-* TODO: Describe initial release.
+* initial release.
+  - Only the Windows platform was implemented.
+
+* IWindowsInfoProvider
+  - makeWindowControlList
+  - isCurrentWindow
+  - getTitle
+  - getIconMemory
+  - getModuleName
+  - getPath
+  
+* IWindowControl 
+  - getId
+  - isAlwaysOn
+  - setAlwaysOn  
+  - getOpacity
+  - setOpacity
+  - isDisabled
+  - setDisabled
+  - isMinimized
+  - setMinimize
