@@ -2,7 +2,6 @@ import 'dart:developer';
 import 'dart:ffi';
 import 'dart:typed_data';
 
-import 'package:bitmap/bitmap.dart';
 import 'package:desktop_window_manager/window_control/impl_winos/impl_wc_winos.dart';
 import 'package:desktop_window_manager/window_control/window_control.dart';
 import 'package:desktop_window_manager/windows_info_provider/windows_info_provider.dart';
@@ -51,7 +50,7 @@ class ImplWindowInfoProviderWinOS implements IWindowsInfoProvider {
   }
 
   @override
-  Uint8List getIconMemory(final IWindowControl wc) {
+  Uint8List getIconHeadless(final IWindowControl wc) {
     final windowId = wc.getId();
     final hIcon = _getIcon(windowId);
 
@@ -86,11 +85,7 @@ class ImplWindowInfoProviderWinOS implements IWindowsInfoProvider {
             DIB_RGB_COLORS);
 
         final bitList = lpBitmap.asTypedList(dwBmpSize);
-        final bitmap = Bitmap.fromHeadless(
-            width, height, Uint8List.fromList(bitList.reversed.toList()));
-
-        final modBitmap = bitmap.applyBatch([BitmapFlip.horizontal()]);
-        return modBitmap.buildHeaded();
+        return bitList;
       } catch (e) {
         log(e.toString());
       } finally {

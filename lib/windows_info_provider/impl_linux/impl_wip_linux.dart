@@ -5,7 +5,7 @@ import 'package:desktop_window_manager/windows_info_provider/windows_info_provid
 
 class ImplWindowsInfoProviderLinux implements IWindowsInfoProvider {
   @override
-  Uint8List getIconMemory(IWindowControl wc) {
+  Uint8List getIconHeadless(IWindowControl wc) {
     throw UnimplementedError();
   }
 

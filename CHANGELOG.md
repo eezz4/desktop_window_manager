@@ -1,3 +1,7 @@
+## 2.0.0
+
+- getIconMemory -> getIconHeadless
+
 ## 1.0.2
 
 - initial release.

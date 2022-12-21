@@ -4,20 +4,20 @@ description: |
   getTitle, getIconMemory, getModuleName, getPath,
   setAlwaysOn, setOpacity, setDisabled, setMinimized,
 
-version: 1.0.2
+version: 2.0.0
 homepage: https://github.com/stacew/desktop_window_manager.git
 
 environment:
   sdk: ">=2.18.2 <3.0.0"
   flutter: ">=2.5.0"
 
+# flutter packages pub publish --dry-run
 dependencies:
   win32: ^3.0.1
-  bitmap: ^0.1.2
-  ffi: ^1.0.0
+
+  ffi: ^2.0.1
   flutter:
     sdk: flutter
-  plugin_platform_interface: ^2.0.2
 
 dev_dependencies:
   flutter_test:

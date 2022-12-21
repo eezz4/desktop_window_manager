@@ -13,6 +13,10 @@ dependencies:
   desktop_window_manager:
     path: ../
 
+  # bitmap: ^0.1.2 # Library version conflict exists.
+  bitmap:
+    git: https://github.com/bluefireteam/bitmap
+
   cupertino_icons: ^1.0.2
 
 dev_dependencies:

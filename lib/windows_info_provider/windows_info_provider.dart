@@ -16,7 +16,7 @@ abstract class IWindowsInfoProvider {
 
   bool isCurrentWindow(final IWindowControl wc);
   String getTitle(final IWindowControl wc);
-  Uint8List getIconMemory(final IWindowControl wc);
+  Uint8List getIconHeadless(final IWindowControl wc);
   String getModuleName(final IWindowControl wc);
   String getPath(final IWindowControl wc);
 }
